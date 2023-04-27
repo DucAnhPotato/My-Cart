@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Cart</string>
+    <string name="search">Search...</string>
+    <string name="results_found_text">12 results found</string>
+    <string name="product_name">Hello hufiurgu eignrj inisenbil ienelu</string>
+    <string name="product_price">50000</string>
+    <string name="empty_total_price">0</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="quantity">1</string>
+    <string name="currency">đ</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/white_background_secondary2_stroke"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="1dp"
+            android:id="@+id/cartItemThumbnail"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/cartItemName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/product_name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cartItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/product_price"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/addQuantityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:background="@drawable/white_background_secondary2_stroke"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/cartItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/decreaseQuantityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove"
+                android:background="@drawable/white_background_secondary2_stroke"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/cartItemPriceWithQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_price"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

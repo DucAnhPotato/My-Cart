@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_background_secondary2_stroke">
+
+        <ImageView
+            android:id="@+id/productThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_launcher_foreground" />
+        
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="@string/product_price"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/pink" />
+
+            <ImageButton
+                android:id="@+id/addToCartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shopping_cart_buy_icon"
+                android:padding="5dp"
+                android:background="@drawable/white_background_blue_stroke"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
